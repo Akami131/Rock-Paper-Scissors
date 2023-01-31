@@ -1,0 +1,7 @@
+// The code of the game will be built like this:
+// The player and the computer have each 3 health points
+// The player chooses between each of the three options
+// The computer returns a random option of his
+// The code checks who wins or a draw
+// The loser loses 1 health point
+// When someone lost 3 times - the game is over and the winner is announced
