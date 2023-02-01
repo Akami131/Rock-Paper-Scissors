@@ -24,7 +24,20 @@ function getPlayerChoice() {
 
 function PlayRound(playerSelection, computerSelection) {
   console.log(playerSelection)
-  switch (playerSelection) {
+  if (computerSelection === playerSelection) {
+    alert("Draw!");
+    return "Draw";
+  } else if (computerSelection == Options[0] && playerSelection == Options[2] ||
+    computerSelection == Options[1] && playerSelection == Options[0] ||
+    computerSelection == Options[2] && playerSelection == Options[1]) {
+      alert("You lose! :(");
+      return "Lose";
+  } else {
+    alert("You win! :)");
+    return "Win";
+  }
+
+  /* switch (playerSelection) {
     case Options[0]:
       if (computerSelection === Options[0]) {
         alert("Draw!");
@@ -58,7 +71,7 @@ function PlayRound(playerSelection, computerSelection) {
         alert("U win! :)");
         return "Win";
       }
-  }
+  } */
 }
 
 let wins = 0,
